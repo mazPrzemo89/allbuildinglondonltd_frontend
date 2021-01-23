@@ -1,0 +1,32 @@
+.headerSec {
+  text-align: center;
+  height: 3.5rem;
+  width: 100vw;
+  padding-top: 1.1rem;
+  background-color: black;
+}
+
+.secHeaderLink {
+  font-size: 0.9rem;
+  font-family: 'Ubuntu', sans-serif, bold;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 470px) {
+  .headerSec {
+    width: 100%;
+    text-align: center;
+    height: 3.3rem;
+    background-color: black;
+  }
+
+  .secHeaderLink {
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif, bold;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: 470px) {
+  html {
+    height: 230%;
+    background-image: url('./images/chris-fowler-m-U6Y8K3i5k-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

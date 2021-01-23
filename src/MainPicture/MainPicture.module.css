@@ -1,0 +1,71 @@
+.mainPictureDiv {
+  position: relative;
+  height: 17rem;
+  width: 100vw;
+  margin-bottom: 4rem;
+}
+
+.mainPicture {
+  height: 100%;
+  width: 100vw;
+  background-image: url('../images/mainPicture.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.pictureText {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Ubuntu', sans-serif, bold;
+  font-weight: bold;
+  width: 90%;
+  height: 70%;
+  margin-top: 11%;
+  margin-left: 5%;
+}
+
+.pictureTextDiv {
+  position: absolute;
+  width: 80vw;
+  height: 50%;
+  bottom: 23%;
+  left: 10%;
+  right: 11%;
+  background-color: white;
+  opacity: 0.7;
+}
+
+@media (min-width: 470px) {
+  .mainPictureDiv {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .mainPicture {
+    width: 100%;
+    height: 20rem;
+  }
+
+  .pictureTextDiv {
+    width: 80%;
+    height: 35%;
+    bottom: 33%;
+    left: 10%;
+  }
+
+  .pictureText {
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 70%;
+  }
+}
+
+/* @media (min-width: 415px) and (max-width: 750px) {
+  .pictureTextDiv {
+    height: 50%;
+    width: 70%;
+    left: 15%;
+  }
+} */

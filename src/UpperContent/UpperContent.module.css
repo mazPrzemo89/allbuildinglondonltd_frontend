@@ -1,0 +1,63 @@
+.upContentContainer {
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+}
+
+.imageDiv {
+  margin-top: 2rem;
+  background-image: url('../images/construction.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25%;
+  width: 90%;
+  margin-left: 5%;
+}
+.imageHeavy {
+  margin-top: 2rem;
+  background-image: url('../images/steelwork.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.imageScaff {
+  margin-top: 2rem;
+  background-image: url('../images/scaffolding.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.imageDescription {
+  font-size: 1.1rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(58, 60, 71);
+}
+
+.btn {
+  background-color: #028ea0;
+  color: white;
+  border-radius: 4px;
+  margin-top: 2rem;
+  margin-left: 30%;
+  width: 40%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #319aa8;
+}

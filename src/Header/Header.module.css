@@ -1,0 +1,61 @@
+.header {
+  text-align: center;
+  height: 6rem;
+  width: 100vw;
+  padding-top: 1.3rem;
+}
+
+.logoLink {
+  font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif, bold;
+  font-weight: bold;
+}
+
+.linkDiv {
+  display: flex;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 0.4rem;
+  height: 2rem;
+}
+
+.secondaryLink {
+  font-size: 0.8rem;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.dropdownLink {
+  font-size: 0.8rem;
+  margin-top: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 470px) {
+  .header {
+    height: 7rem;
+    width: 100%;
+  }
+  .secondaryLink {
+    font-size: 1rem;
+    margin: 12px;
+  }
+
+  .logoLink {
+    font-size: 2.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+  .dropdownLink {
+    font-size: 1rem;
+    margin: 12px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 540px) and (min-width: 470px) {
+  .logoLink {
+    font-size: 1.5rem;
+  }
+}
