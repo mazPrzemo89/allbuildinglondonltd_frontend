@@ -1,37 +1,25 @@
 .upContentContainer {
   display: flex;
   flex-direction: column;
-  height: 200vh;
+  height: 100%;
+}
+
+.blueLink {
+  color: white;
+  text-decoration: none;
+  width: 50px;
+}
+
+.contentWrapper {
 }
 
 .imageDiv {
+  border-radius: 1px;
   margin-top: 2rem;
-  background-image: url('../images/construction.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 25%;
-  width: 90%;
-  margin-left: 5%;
-}
-.imageHeavy {
-  margin-top: 2rem;
-  background-image: url('../images/steelwork.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25%;
-  width: 90%;
-  margin-left: 5%;
-}
-
-.imageScaff {
-  margin-top: 2rem;
-  background-image: url('../images/scaffolding.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 25%;
+  height: 266px;
   width: 90%;
   margin-left: 5%;
 }
@@ -46,12 +34,12 @@
 
 .btn {
   background-color: #028ea0;
-  color: white;
+
   border-radius: 4px;
   margin-top: 2rem;
   margin-left: 30%;
   width: 40%;
-  height: 3.5rem;
+  height: 2.8rem;
   border: none;
   outline: none;
   margin-bottom: 2rem;
@@ -60,4 +48,55 @@
 .btn:hover {
   cursor: pointer;
   background-color: #319aa8;
+}
+
+/* desktop styling */
+@media (min-width: 900px) {
+  .contentWrapper {
+    width: 31%;
+  }
+
+  .upContentContainer {
+    margin-top: 4rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 500px;
+  }
+
+  .imageDescription {
+    font-size: 1rem;
+    height: 2.3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(58, 60, 71);
+    margin-bottom: 20px;
+  }
+
+  .imageDiv {
+    height: 330px;
+    width: 95%;
+    margin: auto;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    background-color: #028ea0;
+    color: white;
+    border-radius: 4px;
+    margin-top: 2rem;
+    margin-left: 20%;
+    width: 60%;
+    height: 2.3rem;
+    border: none;
+    outline: none;
+    margin-bottom: 2rem;
+  }
+}
+
+@-moz-document url-prefix() {
+  /* mobile styling firefox*/
+  .imageDiv {
+    margin: auto;
+  }
 }

@@ -14,7 +14,7 @@
   text-decoration: none;
 }
 
-@media (min-width: 470px) {
+@media (min-width: 614px) {
   .headerSec {
     width: 100%;
     text-align: center;

@@ -1,0 +1,94 @@
+@media (min-width: 470px) {
+  .steelWorkDiv {
+    position: relative;
+    height: 31rem;
+  }
+
+  .bckgImg {
+    position: absolute;
+    width: 100%;
+    height: 27rem;
+    background-image: url('../images/steelworkBack.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+  }
+
+  .steelTitle {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    left: 20rem;
+    top: 9rem;
+    color: white;
+    z-index: 2;
+  }
+
+  .modal {
+    position: absolute;
+    width: 100%;
+    height: 27rem;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.6;
+  }
+
+  .steelWorkContent {
+    position: relative;
+    height: 40rem;
+  }
+
+  .steelWorkQuote {
+    position: absolute;
+    height: 50%;
+  }
+
+  .steelWorkPic {
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/steelworkpic.jpeg');
+    height: 48%;
+    width: 50%;
+  }
+  .steelBottomPic {
+    position: absolute;
+    bottom: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/steelworkBig.png');
+    height: 48%;
+    width: 100%;
+  }
+
+  .quoteTitle {
+    position: absolute;
+    text-align: center;
+    left: 11.6rem;
+    top: 1.5rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #3a3c47;
+  }
+
+  .quoteContent {
+    width: 18rem;
+    text-align: center;
+    font-size: 1.1rem;
+    position: absolute;
+    left: 8rem;
+    top: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #3a3c47;
+  }
+}

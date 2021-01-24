@@ -1,11 +1,11 @@
-@media (min-width: 470px) {
+@media (min-width: 614px) {
   .main {
     width: 75%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     background-color: white;
   }
 }

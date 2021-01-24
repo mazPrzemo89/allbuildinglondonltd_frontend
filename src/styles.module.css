@@ -8,9 +8,9 @@ html {
   margin: 0;
 }
 
-@media (min-width: 470px) {
+@media (min-width: 614px) {
   html {
-    height: 230%;
+    height: auto;
     background-image: url('./images/chris-fowler-m-U6Y8K3i5k-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;

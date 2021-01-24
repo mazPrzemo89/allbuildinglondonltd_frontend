@@ -31,31 +31,48 @@
   margin-right: 5px;
   cursor: pointer;
 }
-
-@media (min-width: 470px) {
+/* desktop styling */
+@media (min-width: 614px) {
   .header {
-    height: 7rem;
+    height: 12rem;
+    padding-top: 3rem;
     width: 100%;
   }
-  .secondaryLink {
-    font-size: 1rem;
-    margin: 12px;
+
+  .linkDiv {
+    margin-top: 1.2rem;
   }
 
   .logoLink {
-    font-size: 2.2rem;
+    padding: 8px;
+    font-size: 3.5rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
+    border: 2px solid black;
+    border-radius: 3px;
   }
-  .dropdownLink {
-    font-size: 1rem;
+
+  .secondaryLink {
+    font-size: 1.3rem;
     margin: 12px;
+    margin-top: 10px;
+  }
+
+  .dropdownLink {
+    font-size: 1.3rem;
+    margin: 10px;
     padding-bottom: 10px;
   }
 }
 
-@media (max-width: 540px) and (min-width: 470px) {
+@media (max-width: 780px) and (min-width: 470px) {
   .logoLink {
     font-size: 1.5rem;
+  }
+  .linkDiv {
+    height: 10rem;
+  }
+  .header {
+    height: 10rem;
   }
 }

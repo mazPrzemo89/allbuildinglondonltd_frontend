@@ -13,7 +13,13 @@ const Header = () => (
         Home
       </StyledLink>
       <StyledLink className={classes.secondaryLink} to="/about">
-        About Us!
+        Gallery
+      </StyledLink>
+      <StyledLink className={classes.secondaryLink} to="/about">
+        About Us
+      </StyledLink>
+      <StyledLink className={classes.secondaryLink} to="/about">
+        Comments!
       </StyledLink>
       <StyledLink className={classes.secondaryLink}>Contact Us</StyledLink>
     </div>
