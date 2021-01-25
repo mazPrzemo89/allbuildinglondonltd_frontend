@@ -11,7 +11,10 @@ const StyledLink = styled(Link)`
     color: black;
   }
   ,
-  &:link,
+  &:link {
+    color: black;
+  }
+  ,
   &:active {
     text-decoration: none;
   }

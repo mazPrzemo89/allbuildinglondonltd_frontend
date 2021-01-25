@@ -32,7 +32,7 @@ const About = () => (
       </p>
       <div className={classes.contactDiv}>
         <div className={classes.emailIcon}></div>
-        <p className={classes.emailValue}> areklondon0@gmail.com</p>
+        <p className={classes.emailValue}> areklondon1@gmail.com</p>
         <div className={classes.phoneIcon}></div>
         <p className={classes.phoneValue}> 07412524967</p>
         <div className={classes.addresIcon}></div>
