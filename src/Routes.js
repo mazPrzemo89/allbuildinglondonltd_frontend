@@ -9,6 +9,7 @@ import Construction from './ConstructionWorkPage/ConstructionWork'
 import SteelWork from './SteelWorkPage/SteelWork'
 import Scaffolding from './ScaffoldingPage/Scaffolding'
 import Dashboard from './Admin/Admin'
+import Gallery from './Gallery/Gallery'
 import classes from './styles.module.css'
 
 const Routes = () => {
@@ -22,6 +23,7 @@ const Routes = () => {
         <Route path="/construction" exact component={Construction}></Route>
         <Route path="/steelwork" exact component={SteelWork}></Route>
         <Route path="/scaffolding" exact component={Scaffolding}></Route>
+        <Route path="/gallery" exact component={Gallery}></Route>
         <AdminRoute path="/admin" exact component={Dashboard}></AdminRoute>
       </Switch>
     </BrowserRouter>

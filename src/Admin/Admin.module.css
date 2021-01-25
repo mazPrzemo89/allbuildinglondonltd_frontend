@@ -34,6 +34,7 @@ input[type='file']::-webkit-file-upload-button:hover {
     width: 70%;
     margin-left: 15%;
     height: 16rem;
+    margin-top: 2rem;
   }
 
   .formTitle {
@@ -100,6 +101,56 @@ input[type='file']::-webkit-file-upload-button:hover {
     border-radius: 2px;
     color: white;
     font-family: 'Ubuntu', sans-serif;
+  }
+
+  .selectDiv {
+    position: relative;
+    height: 100%;
+  }
+
+  .selectEl {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    height: 2rem;
+    border: 2px solid black;
+    background-color: white;
+    left: 25%;
+    top: 26%;
+  }
+
+  .deleteBtn {
+    width: 100%;
+    height: 2rem;
+    font-size: 1.1rem;
+    background-color: red;
+    outline: none;
+    border: 2px solid red;
+    border-radius: 2px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .deleteBtn:hover {
+    cursor: pointer;
+  }
+  .optiona {
+    text-align: center;
+  }
+
+  .selectPhotoCat {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    padding-left: 1rem;
+    width: 50%;
+    height: 2rem;
+    border: 2px solid black;
+    background-color: white;
+    left: 25%;
+    top: 10%;
   }
 }
 
