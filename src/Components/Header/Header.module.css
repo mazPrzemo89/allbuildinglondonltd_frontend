@@ -1,0 +1,284 @@
+.header {
+  text-align: center;
+  height: 6rem;
+  width: 100vw;
+  padding-top: 1.3rem;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 65px;
+  margin: 0 25% 0 25%;
+  background-color: #028ea0;
+  border-radius: 2px;
+  z-index: 300;
+}
+
+.menuTitleDiv {
+  padding-top: 13px;
+  height: 65px;
+  font-size: 1.8rem;
+  margin: 0;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+.menuTitleDiv p {
+  margin: 0;
+}
+
+.logoWrapper {
+  height: 10rem;
+  width: 41rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6%;
+  margin-bottom: 2rem;
+}
+
+.logoDiv {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../images/400JpgdpiLogoCropped.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logoDiv:hover {
+  cursor: pointer;
+}
+
+.logoLink {
+  font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif, bold;
+  font-weight: bold;
+  color: #028ea0;
+}
+
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 10px;
+  border: 1px solid white;
+  height: 30rem;
+  width: 100%;
+  cursor: default;
+}
+
+.blueLink {
+  height: 2.3rem;
+  width: 50%;
+  margin-left: 25%;
+  border: 2px solid white;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.menuBtn {
+  font-size: 1rem;
+  height: 90%;
+  outline: none;
+  border: none;
+  background-color: #028ea0;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+.secondaryLink {
+  font-size: 0.8rem;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.dropdownLink {
+  font-size: 1.3rem;
+  height: 2rem;
+  margin-top: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.menuLink {
+  font-size: 1.1rem;
+  height: 4rem;
+  padding-top: 20px;
+
+  cursor: pointer;
+}
+
+.logout {
+  margin-top: 3px;
+  width: 8rem;
+  height: 2.3rem;
+  border: 2px solid red;
+  border-radius: 2px;
+  background-color: red;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+}
+
+.logout:hover {
+  cursor: pointer;
+}
+
+/* desktop styling */
+@media (min-width: 614px) {
+  .header {
+    height: 20rem;
+    width: 100%;
+  }
+
+  .linkDiv {
+    margin-top: 1.2rem;
+  }
+
+  .logoLink {
+    padding: 8px;
+    font-size: 3.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 3px;
+    color: #028ea0;
+  }
+
+  .secondaryLink {
+    font-size: 1.3rem;
+    margin: 12px;
+    margin-top: 10px;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  height: 11rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  z-index: 3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1455px) {
+  .menu {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 1301px) {
+  .logoDiv {
+    width: 70%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 842px) {
+  .dropdown {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .dropdown-content {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .logout {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 12px;
+  }
+
+  .linkDiv {
+    flex-direction: column;
+    height: 100%;
+  }
+  .header {
+    height: 100%;
+  }
+
+  .secondaryLink {
+    font-size: 1.1rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .dropdownLink {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .menu {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 750px) {
+  .logoDiv {
+    width: 70%;
+    margin-left: 10%;
+  }
+
+  .logoWrapper {
+    height: 10rem;
+    width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 474px) {
+  .menu {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 4rem;
+  }
+  .logoDiv {
+    width: 68%;
+    margin-left: 1%;
+  }
+
+  .blueLink {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .menuBtn {
+    height: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .logoDiv {
+    width: 66%;
+    margin-left: -2%;
+  }
+}

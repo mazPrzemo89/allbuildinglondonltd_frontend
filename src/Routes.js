@@ -1,19 +1,18 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import AdminRoute from './Admin/auth/AdminRoute'
-import About from './MainComponents/About'
+import About from './page.About/About'
 import Signin from './User/Signin'
-import Home from './MainComponents/Home'
-import Menu from './MainComponents/Menu'
-import Construction from './ConstructionWorkPage/ConstructionWork'
-import SteelWork from './SteelWorkPage/SteelWork'
-import Scaffolding from './ScaffoldingPage/Scaffolding'
+import Home from './page.Home/Home'
+import Construction from './page.ConstructionWork/ConstructionWork'
+import SteelWork from './page.SteelWork/SteelWork'
+import Scaffolding from './page.Scaffolding/Scaffolding'
 import Dashboard from './Admin/Admin'
-import Gallery from './Gallery/Gallery'
-import Comments from './Comments/Comments'
-import Email from './Email/Email'
-import EmailConf from './Confirmation/Email'
-import CommentConf from './Confirmation/Comment'
+import Gallery from './page.Gallery/Gallery'
+import Comments from './page.Comments/Comments'
+import Email from './page.Email/Email'
+import EmailConf from './pages.Confirmation/Email'
+import CommentConf from './pages.Confirmation/Comment'
 import classes from './styles.module.css'
 
 const Routes = () => {
@@ -22,7 +21,6 @@ const Routes = () => {
       <Switch>
         <Route path="/login" exact component={Signin}></Route>
         <Route path="/about" exact component={About}></Route>
-        <Route path="/menu" exact component={Menu}></Route>
         <Route path="/" exact component={Home}></Route>
         <Route path="/construction" exact component={Construction}></Route>
         <Route path="/steelwork" exact component={SteelWork}></Route>

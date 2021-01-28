@@ -1,0 +1,114 @@
+.comment {
+  position: relative;
+  width: 70%;
+  min-height: 5rem;
+  margin-left: 15%;
+  margin-top: 2rem;
+  border-radius: 2px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.507);
+}
+
+.content {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  margin-left: 15px;
+  width: 60%;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.5rem;
+}
+
+.starDiv {
+  position: absolute;
+  right: 3%;
+  top: 10%;
+}
+
+.name {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.deleteBtn {
+  position: absolute;
+  height: 2rem;
+  width: 6rem;
+  font-size: 1.1rem;
+  background-color: red;
+  outline: none;
+  border: 2px solid red;
+  border-radius: 2px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  right: 3%;
+  bottom: 10px;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+}
+
+.confirmBtn {
+  position: absolute;
+  height: 2rem;
+  width: 6rem;
+  font-size: 1.1rem;
+  background-color: blue;
+  outline: none;
+  border: 2px solid blue;
+  border-radius: 2px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  right: 16%;
+  bottom: 10px;
+}
+
+.confirmBtn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1420px) {
+  .confirmBtn {
+    right: 3%;
+    bottom: 37px;
+  }
+
+  .deleteBtn {
+    bottom: 2px;
+  }
+}
+@media (max-width: 1040px) {
+  .content {
+    padding-top: 80px;
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 659px) {
+  .comment {
+    width: 96%;
+    margin-left: 2%;
+    min-height: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .starDiv {
+    top: 6%;
+  }
+}
+
+@media (max-width: 390px) {
+  .content {
+    padding-top: 90px;
+  }
+
+  .comment {
+    width: 92%;
+    margin-left: 3%;
+  }
+}

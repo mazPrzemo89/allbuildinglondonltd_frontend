@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import Layout from '../Layout/Layout'
+import Layout from '../Components/Layout/Layout'
 import { isAuthenticated } from '../Admin/auth'
-import { getCatIds, deleteCat, createNewCat } from './APIs/CategoryAPIs'
-import { postPhoto } from './APIs/PhotoApis'
+import { getCatIds, deleteCat, createNewCat } from '../APIs/CategoryAPIs'
+import { postPhoto } from '../APIs/PhotoApis'
 import classes from './Admin.module.css'
 
 const Dashboard = () => {

@@ -1,0 +1,41 @@
+.headerSec {
+  text-align: center;
+  height: 6rem;
+  width: 100%;
+  padding-top: 2rem;
+  background-color: #028ea0;
+}
+
+.secHeaderLink {
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif, bold;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .headerSec {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 812px) {
+  .headerSec {
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    height: 4rem;
+    background-color: #028ea0;
+    margin-top: 1rem;
+    padding-top: 1.3rem;
+  }
+
+  .secHeaderLink {
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif, bold;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+}

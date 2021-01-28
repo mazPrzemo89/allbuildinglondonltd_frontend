@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Redirect } from 'react-router-dom'
-import Layout from '../Layout/Layout'
+import Layout from '../Components/Layout/Layout'
 import { signin, authenticate, isAuthenticated } from '../Admin/auth'
 import classes from './Signin.module.css'
 

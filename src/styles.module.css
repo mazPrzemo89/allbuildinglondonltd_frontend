@@ -1,8 +1,13 @@
 * {
   box-sizing: border-box;
 }
-body,
-html {
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  z-index: 5;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -16,4 +21,12 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+body {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  width: 100vw;
+  margin: 0;
 }

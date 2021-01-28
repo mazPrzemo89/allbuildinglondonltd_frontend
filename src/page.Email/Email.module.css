@@ -1,0 +1,15 @@
+.title {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.borderTop {
+  width: 60%;
+  margin-left: 20%;
+  height: 1px;
+  background-color: black;
+}
+
+.mapDiv {
+}

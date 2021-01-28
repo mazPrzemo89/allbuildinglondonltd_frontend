@@ -1,36 +1,41 @@
 .SideDrawer {
-    position: fixed;
-    width:90%;
-    margin: 0 5% 0 5%;
-    height: 430px;
-    left: 0;
-    top: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    z-index: 200;
-    background-color: white;
-    background-color: rgb(0, 225, 255);
-    box-sizing: border-box;
-    transition: transform 0.3s ease-out;
-    
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 6px;
+  border: 2px solid white;
+  z-index: 200;
+  background-color: #028ea0;
+  box-sizing: border-box;
+  transition: transform 1s ease-out;
+  cursor: pointer;
 }
 /* background-color: rgb(173, 173, 173); */
 @media (min-width: 770px) {
-    .SideDrawer {
-        width:40%;
-        margin: 0 30% 0 30%;
-        border: 1px solid grey;
-        border-top: none;
-        background-color: rgb(0, 225, 255);
-    }
+  /* .SideDrawer {
+    width: 100%;
+    border: 1px solid grey;
+    border-top: none;
+  } */
+}
+
+@media (max-width: 414px) {
+  .SideDrawer {
+    top: -100%;
+    width: 140%;
+    margin-left: -19%;
+  }
 }
 
 .Open {
-    transform: translateY(0);
+  transform: translateY(0%);
 }
 
 .Close {
-    transform: translateY(-100%);
+  display: none;
+  z-index: 1;
+  transform: translateY(0);
 }
 
 /* .Logo {
