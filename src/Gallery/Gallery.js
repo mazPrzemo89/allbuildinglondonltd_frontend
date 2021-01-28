@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 import classes from './Gallery.module.css'
-import { photosByCategoryId } from '../Admin/APIs/PhotoApis'
+import { photosByCategoryId, deletePhoto } from '../Admin/APIs/PhotoApis'
 import { getCatIds } from '../Admin/APIs/CategoryAPIs'
+import { isAuthenticated } from '../Admin/auth/index'
 import Spinner from './Spinner'
 import Layout from '../Layout/Layout'
 
@@ -9,8 +11,13 @@ const Gallery = () => {
   const [photos, setPhotos] = useState([])
   const [categoryData, setCatIds] = useState([])
   const [currentCategory, setCurrentCategory] = useState('')
+  const [currentCategoryId, setCurrentCategoryId] = useState('')
   const [isLoading, setLoading] = useState(false)
 
+  const { user, token } = isAuthenticated()
+
+  const isAdmin = isAuthenticated() && user.email === 'email@email.com'
+  console.log(useHistory().location.pathname === '/gallery')
   const getCategories = () => {
     getCatIds().then((data) => {
       if (data.error) {
@@ -46,9 +53,21 @@ const Gallery = () => {
   }, [])
 
   const clicked = (e) => {
+    if (window.innerWidth < 430) {
+      window.scroll(0, 600)
+    }
     loadPhotos(e.target.value)
+    setCurrentCategoryId(e.target.value)
     setCurrentCategory(e.target.name)
     setLoading(true)
+  }
+
+  const deleteClicked = (event) => {
+    deletePhoto(user._id, token, event.target.value).then(() => {
+      loadPhotos(currentCategoryId)
+      setCurrentCategory(currentCategory)
+      setLoading(true)
+    })
   }
 
   const galleryButtons = () => {
@@ -74,12 +93,13 @@ const Gallery = () => {
     )
   }
 
-  const photosToRender = () => {
+  const photosToRenderJSX = () => {
     return (
       <div className={classes.grid}>
         {console.log(photos)}
         {photos.length > 0 &&
           photos.map((data, i) => {
+            console.log(data)
             return (
               <div className={classes.galleryDiv} key={i}>
                 <img
@@ -88,6 +108,16 @@ const Gallery = () => {
                   alt="photo"
                   src={data.photo}
                 />
+                <button
+                  style={{ display: isAdmin ? '' : 'none' }}
+                  value={data._id}
+                  onClick={(event) => {
+                    deleteClicked(event)
+                  }}
+                  className={classes.delPhoto}
+                >
+                  Delete Photo
+                </button>
               </div>
             )
           })}
@@ -95,11 +125,21 @@ const Gallery = () => {
     )
   }
 
-  const galleryTitle = () => (
+  const galleryTitleJSX = () => (
     <div className={classes.galleryTitleDiv}>
       <p className={classes.galleryTitle}>{currentCategory}</p>
     </div>
   )
+
+  const galleryMessageJSX = () => {
+    const noCategory = 'Choose category!'
+    const yesCategory = 'Take a look at out latest work!'
+    return (
+      <p className={classes.gallerySecond}>
+        {currentCategory ? yesCategory : noCategory}
+      </p>
+    )
+  }
   const spinnerDiv = () => {
     return (
       <div className={classes.spinMain}>
@@ -116,13 +156,12 @@ const Gallery = () => {
       <div className={classes.upper}></div>
       <p className={classes.galleryMain}>Gallery</p>
       {galleryButtons()}
-      <p className={classes.gallerySecond}>Take a look at out latest work!</p>
-
+      {galleryMessageJSX()}
       <div className={classes.bottom}></div>
       {isLoading && spinnerDiv()}
       {currentCategory === !'' && spinnerDiv()}
-      {photos.length > 0 && galleryTitle()}
-      {photos.length > 0 && photosToRender()}
+      {photos.length > 0 && galleryTitleJSX()}
+      {photos.length > 0 && photosToRenderJSX()}
     </Layout>
   )
 }

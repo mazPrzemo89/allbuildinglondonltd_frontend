@@ -73,8 +73,6 @@ const Signin = () => {
     if (redirectToReferrer) {
       if (user && user.email === 'email@email.com') {
         return <Redirect to="/" />
-      } else {
-        return <Redirect to="/" />
       }
     }
     if (isAuthenticated()) {

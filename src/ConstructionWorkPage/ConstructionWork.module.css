@@ -1,156 +1,309 @@
-/* desktop styling */
-@media (min-width: 470px) {
-  .constructionContent {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-  }
+.constructionContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
 
-  .constructionTitleDiv {
-    width: 100%;
-    height: 200px;
+.constructionTitleDiv {
+  width: 100%;
+  height: 200px;
+}
+
+.constructionTitle {
+  width: 45%;
+  margin-left: 25%;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.contentTop {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+}
+
+.contentTopImg {
+  border-radius: 2px;
+  width: 38%;
+  height: 90%;
+  margin-left: 4%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contentTopText {
+  width: 50%;
+}
+
+.contentTopP {
+  width: 60%;
+  margin: auto;
+  padding-top: 4.8rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.quoteDiv {
+  height: 10rem;
+}
+
+.quote {
+  width: 60%;
+  margin: auto;
+  padding-top: 2.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+}
+
+.loftDiv {
+  position: relative;
+  height: 23rem;
+}
+
+.loftImg {
+  height: 22rem;
+  width: 47rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loftQuoteDiv {
+  left: 10rem;
+  top: 3rem;
+  height: 18rem;
+  width: 40rem;
+  z-index: 2;
+  background-color: #14232f;
+  position: absolute;
+}
+
+.loftTitle {
+  width: 60%;
+  margin: auto;
+  padding-top: 3.7rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-align: center;
+  color: white;
+}
+
+.loftQuote {
+  width: 60%;
+  margin: auto;
+  padding-top: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+}
+
+.stairsImg {
+  height: 22rem;
+  width: 47rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stairsQuoteDiv {
+  right: 10rem;
+  top: 5.3rem;
+  height: 13rem;
+  width: 40rem;
+  z-index: 2;
+  background-color: #14232f;
+  position: absolute;
+}
+
+.stairsTitle {
+  width: 60%;
+  margin: auto;
+  padding-top: 5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 1250px) {
+  .constructionContent {
+    margin-top: 1rem;
   }
 
   .constructionTitle {
-    width: 45%;
-    margin-left: 25%;
-    margin-top: 3rem;
-    font-size: 1.8rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-  }
-
-  .contentTop {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    height: 300px;
+    width: 60%;
+    margin-left: 20%;
   }
 
   .contentTopImg {
-    border-radius: 2px;
-    width: 38%;
-    height: 90%;
-    margin-left: 4%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .contentTopText {
     width: 50%;
   }
 
   .contentTopP {
-    width: 60%;
-    margin: auto;
-    padding-top: 4.8rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-align: center;
-    color: white;
-  }
-
-  .quoteDiv {
-    height: 10rem;
+    padding-top: 3rem;
   }
 
   .quote {
-    width: 60%;
-    margin: auto;
-    padding-top: 2.6rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 1.3rem;
-    text-align: center;
-    color: white;
-  }
-
-  .loftDiv {
-    position: relative;
-    height: 23rem;
+    padding-top: 1rem;
   }
 
   .loftImg {
-    height: 22rem;
-    width: 47rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
   }
-
   .loftQuoteDiv {
-    left: 10rem;
-    top: 3rem;
-    height: 18rem;
-    width: 40rem;
-    z-index: 2;
-    background-color: #14232f;
-    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 60%;
   }
 
   .loftTitle {
-    width: 60%;
-    margin: auto;
-    padding-top: 3.7rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 2.3rem;
-    text-align: center;
-    color: white;
+    padding-top: 1rem;
+    font-size: 2rem;
   }
 
   .loftQuote {
-    width: 60%;
-    margin: auto;
-    padding-top: 1.5rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 1.3rem;
-    text-align: center;
-    color: white;
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
   }
 
   .stairsImg {
-    height: 22rem;
-    width: 47rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
   }
 
   .stairsQuoteDiv {
-    right: 10rem;
-    top: 5.3rem;
-    height: 13rem;
-    width: 40rem;
-    z-index: 2;
-    background-color: #14232f;
-    position: absolute;
+    width: 40%;
+    left: 30%;
+    height: 30%;
+    top: 40%;
   }
 
   .stairsTitle {
-    width: 60%;
-    margin: auto;
-    padding-top: 5rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 2.3rem;
-    text-align: center;
-    color: white;
+    padding-top: 2.2rem;
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 888px) {
+  .contentTop {
+    height: 30rem;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .contentTopText {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .contentTopP {
+    width: 70%;
+    left: 10%;
+    padding-top: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .contentTopImg {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .quoteDiv {
+    height: 13rem;
+  }
+
+  .loftQuoteDiv {
+    width: 70%;
+    left: 15%;
+    height: 60%;
+    top: 20%;
+  }
+
+  .stairsTitle {
+    padding-top: 2.2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .constructionContent {
+    margin-top: 2rem;
+  }
+
+  .constructionTitleDiv {
+    height: 15rem;
+  }
+
+  .contentTop {
+    height: 30rem;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .contentTopText {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contentTopP {
+    width: 70%;
+    left: 10%;
+    padding-top: 1;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .contentTopImg {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .quoteDiv {
+    height: 15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .loftQuoteDiv {
+    width: 80%;
+    left: 10%;
+    height: 80%;
+    top: 10%;
+  }
+
+  .loftQuote {
+    padding-top: 1rem;
+  }
+
+  .stairsTitle {
+    padding-top: 1rem;
   }
 }

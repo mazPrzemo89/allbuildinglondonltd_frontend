@@ -10,6 +10,10 @@ import SteelWork from './SteelWorkPage/SteelWork'
 import Scaffolding from './ScaffoldingPage/Scaffolding'
 import Dashboard from './Admin/Admin'
 import Gallery from './Gallery/Gallery'
+import Comments from './Comments/Comments'
+import Email from './Email/Email'
+import EmailConf from './Confirmation/Email'
+import CommentConf from './Confirmation/Comment'
 import classes from './styles.module.css'
 
 const Routes = () => {
@@ -24,6 +28,10 @@ const Routes = () => {
         <Route path="/steelwork" exact component={SteelWork}></Route>
         <Route path="/scaffolding" exact component={Scaffolding}></Route>
         <Route path="/gallery" exact component={Gallery}></Route>
+        <Route path="/comments" exact component={Comments}></Route>
+        <Route path="/getquote" exact component={Email}></Route>
+        <Route path="/confirmationemail" exact component={EmailConf}></Route>
+        <Route path="/confirmation" exact component={CommentConf}></Route>
         <AdminRoute path="/admin" exact component={Dashboard}></AdminRoute>
       </Switch>
     </BrowserRouter>

@@ -9,7 +9,24 @@ const Header = () => (
       All Building London LTD
     </StyledLink>
     <div className={classes.linkDiv}>
-      <div className={classes.dropdownLink}>Menu</div>
+      <div className={classes.dropdown}>
+        <span className={classes.dropdownLink}>Menu</span>
+        <div className={classes['dropdown-content']}>
+          <StyledLink
+            className={classes.menuLink}
+            // style={{ paddingTop: '10px' }}
+            to="./construction"
+          >
+            Construction work
+          </StyledLink>
+          <StyledLink className={classes.menuLink} to="./steelwork">
+            Steelwork
+          </StyledLink>
+          <StyledLink className={classes.menuLink} to="./scaffolding">
+            Scaffolding Service
+          </StyledLink>
+        </div>
+      </div>
       <StyledLink className={classes.secondaryLink} to="/">
         Home
       </StyledLink>
@@ -20,7 +37,7 @@ const Header = () => (
         About Us
       </StyledLink>
       <StyledLink className={classes.secondaryLink} to="/comments">
-        Comments!
+        Comments
       </StyledLink>
       <StyledLink className={classes.secondaryLink} to="/getquote">
         Contact Us
@@ -32,7 +49,7 @@ const Header = () => (
       )}
       {isAuthenticated() && isAuthenticated().user.email === 'email@email.com' && (
         <button
-          className={classes.btn}
+          className={classes.logout}
           onClick={() => signout(() => window.location.reload())}
         >
           Logout

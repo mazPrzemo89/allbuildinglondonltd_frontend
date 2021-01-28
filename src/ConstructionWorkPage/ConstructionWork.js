@@ -20,16 +20,16 @@ const ConstructionWork = () => (
         ></div>
         <div className={classes.contentTopText}>
           <p className={classes.contentTopP}>
-            The example of our team working on the roof construction. This is
-            what you call a well done roof!
+            The example of our team working on a roof construction. This is what
+            you call a well done roofing!
           </p>
         </div>
       </div>
       <div className={classes.quoteDiv}>
         <p className={classes.quote}>
-          We are always aiming for the highest step, that's why all of our jobs
-          are done to the highest standard. The team is managed by the owner of
-          the company which has more than 30 years of experience!
+          We are always aiming for the highest quality, that's why all of our
+          jobs are done to the highest standards. The team is led by the very
+          owner of the company which has more than 30 years of experience!
         </p>
       </div>
       <div className={classes.loftDiv}>
@@ -40,8 +40,8 @@ const ConstructionWork = () => (
         <div className={classes.loftQuoteDiv}>
           <p className={classes.loftTitle}>Loft Conversion</p>
           <p className={classes.loftQuote}>
-            Here you can see a loft conversion work carried out by our team to
-            the highest standards and achieving all the requirements!
+            Here you can see a loft conversion work carried out by our team. We
+            are always focused on the details and meat all the requirements!
           </p>
         </div>
       </div>

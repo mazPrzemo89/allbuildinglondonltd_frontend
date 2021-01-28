@@ -10,9 +10,6 @@
   width: 50px;
 }
 
-.contentWrapper {
-}
-
 .imageDiv {
   border-radius: 1px;
   margin-top: 2rem;
@@ -42,6 +39,7 @@
   border: none;
   outline: none;
   margin-bottom: 2rem;
+  color: white;
 }
 
 .btn:hover {
@@ -90,12 +88,5 @@
     border: none;
     outline: none;
     margin-bottom: 2rem;
-  }
-}
-
-@-moz-document url-prefix() {
-  /* mobile styling firefox*/
-  .imageDiv {
-    margin: auto;
   }
 }

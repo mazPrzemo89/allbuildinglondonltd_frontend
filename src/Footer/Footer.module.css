@@ -17,3 +17,10 @@
   height: 1px;
   background-color: black;
 }
+
+@media (max-width: 400px) {
+  .footerText {
+    width: 80%;
+    margin-left: 10%;
+  }
+}

@@ -26,9 +26,35 @@
 }
 
 .dropdownLink {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
+  height: 2rem;
   margin-top: 12px;
   margin-right: 5px;
+  cursor: pointer;
+}
+
+.menuLink {
+  font-size: 1.1rem;
+  height: 4rem;
+  padding-top: 20px;
+
+  cursor: pointer;
+}
+
+.logout {
+  margin-top: 3px;
+  width: 8rem;
+  height: 2.3rem;
+  border: 2px solid red;
+  border-radius: 2px;
+  background-color: red;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+}
+
+.logout:hover {
   cursor: pointer;
 }
 /* desktop styling */
@@ -57,22 +83,69 @@
     margin: 12px;
     margin-top: 10px;
   }
-
-  .dropdownLink {
-    font-size: 1.3rem;
-    margin: 10px;
-    padding-bottom: 10px;
-  }
 }
 
-@media (max-width: 780px) and (min-width: 470px) {
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  height: 11rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  z-index: 3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 842px) {
+  .dropdown {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .dropdown-content {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .logout {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 12px;
+  }
   .logoLink {
     font-size: 1.5rem;
   }
   .linkDiv {
-    height: 10rem;
+    flex-direction: column;
+    height: 100%;
   }
   .header {
-    height: 10rem;
+    height: 100%;
+  }
+
+  .secondaryLink {
+    font-size: 1.1rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .dropdownLink {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 }

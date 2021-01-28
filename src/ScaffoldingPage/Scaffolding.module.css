@@ -1,106 +1,182 @@
-@media (min-width: 470px) {
-  /* .scaffoldingContainer {
-    width: 100%;
-    height: 100rem;
-  } */
+.scaffoldingContent {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  background-color: white;
+}
+
+.scaffTitle {
+  position: absolute;
+
+  left: 4rem;
+  top: 1.5rem;
+  width: 30rem;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: #3a3c47;
+}
+
+.scaffQuote {
+  width: 30rem;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 4rem;
+  top: 8rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #3a3c47;
+}
+
+.scaffImage {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url('../images/scaff.png');
+  border-radius: 2px;
+  top: 3rem;
+  right: 12%;
+  width: 40%;
+  height: 70%;
+}
+
+.borderTop {
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  height: 1px;
+  background-color: black;
+}
+
+.scaffoldingBottom {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  background-color: black;
+}
+
+.scaffBtm {
+  position: absolute;
+  left: 17%;
+  top: 20%;
+  width: 66%;
+  height: 60%;
+  background-color: #14232f;
+}
+
+.scaffBtmContent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.scaffPhone {
+  position: absolute;
+  left: 5rem;
+  top: 3.2rem;
+  font-size: 1.8rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.scaffButton {
+  position: absolute;
+  right: 10%;
+  top: 32%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #14232f;
+  border-radius: 4px;
+  width: 30%;
+  height: 2.8rem;
+  border: 2px solid white;
+  outline: none;
+}
+
+.scaffButton:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1480px) {
+  .scaffImage {
+    width: 45%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 1379px) {
   .scaffoldingContent {
-    position: relative;
-    width: 100%;
-    height: 30rem;
-    background-color: white;
+    margin-top: 2rem;
+    height: 60rem;
   }
 
   .scaffTitle {
-    position: absolute;
-
-    left: 4rem;
-    top: 1.5rem;
-    width: 30rem;
-    font-size: 2rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color: #3a3c47;
+    width: 80%;
+    left: 10%;
+    text-align: center;
   }
-
   .scaffQuote {
-    width: 30rem;
-    font-size: 1.2rem;
-    position: absolute;
-    left: 4rem;
-    top: 8rem;
-    font-family: 'Ubuntu', sans-serif;
-    color: #3a3c47;
+    width: 80%;
+    left: 10%;
+    text-align: center;
   }
 
   .scaffImage {
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('../images/scaff.png');
-    border-radius: 2px;
-    top: 3rem;
-    right: 1rem;
-    width: 30rem;
-    height: 22rem;
-  }
-
-  .borderTop {
-    position: absolute;
-    left: 15%;
-    width: 70%;
-    height: 1px;
-    background-color: black;
-  }
-
-  .scaffoldingBottom {
-    position: relative;
-    width: 100%;
-    height: 15rem;
-    background-color: black;
-  }
-
-  .scaffBtm {
-    position: absolute;
-    left: 17%;
-    top: 20%;
-    width: 66%;
-    height: 60%;
-    background-color: #14232f;
-  }
-
-  .scaffBtmContent {
-    position: relative;
-    height: 100%;
-    width: 100%;
+    top: 40%;
+    height: 45%;
+    width: 80%;
+    right: 10%;
   }
 
   .scaffPhone {
-    position: absolute;
-    left: 5rem;
-    top: 3.2rem;
-    font-size: 1.8rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    color: white;
+    width: 50%;
+    left: 10%;
   }
 
   .scaffButton {
-    position: absolute;
-    right: 10%;
-    top: 32%;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
-    color: white;
-    background-color: #14232f;
-    border-radius: 4px;
-    width: 30%;
-    height: 2.8rem;
-    border: 2px solid white;
-    outline: none;
+    top: 35%;
+    right: 7%;
+  }
+}
+
+@media (max-width: 680px) {
+  .scaffoldingContent {
+    height: 50rem;
+  }
+  .scaffTitle {
+    width: 100%;
+    text-align: center;
+    left: 0%;
+    font-size: 1.8rem;
   }
 
-  .scaffButton:hover {
-    cursor: pointer;
+  .scaffQuote {
+    width: 90%;
+    text-align: center;
+    left: 5%;
+  }
+  .scaffImage {
+    top: 50%;
+    width: 100%;
+    right: 0;
+    height: 40%;
+  }
+  .scaffPhone {
+    text-align: center;
+    top: 14%;
+    width: 70%;
+    left: 15%;
+    font-size: 1.4em;
+  }
+
+  .scaffButton {
+    width: 70%;
+    left: 15%;
+    top: 57%;
+    font-weight: 700;
+    font-size: 1.2rem;
   }
 }

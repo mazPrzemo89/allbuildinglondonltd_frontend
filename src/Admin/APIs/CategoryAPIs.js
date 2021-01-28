@@ -17,6 +17,25 @@ export const createCat = (userId, token, data) => {
     })
 }
 
+export const createNewCat = (userId, token, name) => {
+  console.log(name)
+  return fetch(`${API}/category/createnew/${userId}`, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({ name }),
+  })
+    .then((response) => {
+      return response.json()
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+}
+
 export const deleteCat = (userId, token, id) => {
   console.log(JSON.stringify(id))
   return fetch(`${API}/category/delete/${userId}`, {

@@ -1,0 +1,19 @@
+.subquote {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
+.subquotelink {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.sublinkDiv {
+  display: flex;
+  justify-content: center;
+}

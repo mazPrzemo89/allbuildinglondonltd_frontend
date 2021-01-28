@@ -18,12 +18,30 @@ export const postPhoto = (userId, token, data) => {
 }
 
 export const photosByCategoryId = (category) => {
-  return fetch(`${API}/photo/get/`, {
+  return fetch(`${API}/photo/get`, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
     },
     body: JSON.stringify({ category }),
+  })
+    .then((response) => {
+      return response.json()
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+}
+
+export const deletePhoto = (userId, token, id) => {
+  console.log(JSON.stringify(id))
+  return fetch(`${API}/photo/delete/${userId}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({ id }),
   })
     .then((response) => {
       return response.json()
