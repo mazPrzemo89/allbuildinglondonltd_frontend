@@ -42,19 +42,21 @@ const Header = () => (
       <StyledLink className={classes.secondaryLink} to="/getquote">
         Contact Us
       </StyledLink>
-      {isAuthenticated() && isAuthenticated().user.email === 'email@email.com' && (
-        <StyledLink className={classes.secondaryLink} to="/admin">
-          Admin
-        </StyledLink>
-      )}
-      {isAuthenticated() && isAuthenticated().user.email === 'email@email.com' && (
-        <button
-          className={classes.logout}
-          onClick={() => signout(() => window.location.reload())}
-        >
-          Logout
-        </button>
-      )}
+      {isAuthenticated() &&
+        isAuthenticated().user.email === 'areklondon1@gmail.com' && (
+          <StyledLink className={classes.secondaryLink} to="/admin">
+            Admin
+          </StyledLink>
+        )}
+      {isAuthenticated() &&
+        isAuthenticated().user.email === 'areklondon1@gmail.com' && (
+          <button
+            className={classes.logout}
+            onClick={() => signout(() => window.location.reload())}
+          >
+            Logout
+          </button>
+        )}
     </div>
   </div>
 )

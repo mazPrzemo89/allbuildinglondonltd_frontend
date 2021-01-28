@@ -1,0 +1,31 @@
+
+@media (max-width: 414px)  { 
+    .Backdrop {
+        width: 414px;
+        height: 1000px;
+        position: fixed;
+        z-index: 20;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+}
+@media (min-width: 414px)  { 
+.Backdrop {
+    width: 414px;
+    position: fixed;
+    top:-1000;
+    left:-1000;
+    }
+}
+
+/* .Backdrop {
+    width: 414px;
+    height: 1000px;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+} */

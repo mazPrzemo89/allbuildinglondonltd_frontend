@@ -16,7 +16,7 @@ const Gallery = () => {
 
   const { user, token } = isAuthenticated()
 
-  const isAdmin = isAuthenticated() && user.email === 'email@email.com'
+  const isAdmin = isAuthenticated() && user.email === 'areklondon1@gmail.com'
   console.log(useHistory().location.pathname === '/gallery')
   const getCategories = () => {
     getCatIds().then((data) => {

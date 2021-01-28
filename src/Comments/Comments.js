@@ -45,7 +45,7 @@ const Comments = () => {
         console.log(err)
       }
     })
-    if (isAuthenticated() && user.email === 'email@email.com') {
+    if (isAuthenticated() && user.email === 'areklondon1@gmail.com') {
       fetchUnconfirmedComments(user._id, token).then((data, err) => {
         if (data) {
           unfilteredComments = data
@@ -131,7 +131,6 @@ const Comments = () => {
     return (
       <Fragment>
         {confirmedComments.length > 0 &&
-          typeof confirmedComments === Array &&
           confirmedComments.map((com, i) => {
             return <Comment key={i} comment={com} />
           })}

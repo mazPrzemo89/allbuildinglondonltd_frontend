@@ -7,7 +7,7 @@ const AdminRoute = ({ component: Component, ...rest }) => (
     {...rest}
     render={(props) =>
       isAuthenticated() &&
-      isAuthenticated().user.email === 'email@email.com' ? (
+      isAuthenticated().user.email === 'areklondon1@gmail.com' ? (
         <Component {...props} />
       ) : (
         <Redirect

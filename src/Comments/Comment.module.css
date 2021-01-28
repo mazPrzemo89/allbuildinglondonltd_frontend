@@ -96,6 +96,12 @@
   }
 }
 
+@media (max-width: 450px) {
+  .starDiv {
+    top: 6%;
+  }
+}
+
 @media (max-width: 350px) {
   .content {
     padding-top: 90px;

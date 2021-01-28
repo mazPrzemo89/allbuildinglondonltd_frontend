@@ -55,7 +55,7 @@ const Comment = ({ comment }) => {
         <button
           style={{
             display:
-              isAuthenticated() && user.email === 'email@email.com'
+              isAuthenticated() && user.email === 'areklondon1@gmail.com'
                 ? ''
                 : 'none',
           }}
@@ -69,7 +69,7 @@ const Comment = ({ comment }) => {
           style={{
             display:
               isAuthenticated() &&
-              user.email === 'email@email.com' &&
+              user.email === 'areklondon1@gmail.com' &&
               comment.confirmed === false
                 ? ''
                 : 'none',

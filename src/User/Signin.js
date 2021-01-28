@@ -6,8 +6,8 @@ import classes from './Signin.module.css'
 
 const Signin = () => {
   const [values, setValues] = useState({
-    email: 'email@email.com',
-    password: 'other passowrd2',
+    email: 'areklondon1@gmail.com',
+    password: 'Borys4172',
     error: '',
     redirectToReferrer: false,
   })
@@ -71,7 +71,7 @@ const Signin = () => {
 
   const redirectUser = () => {
     if (redirectToReferrer) {
-      if (user && user.email === 'email@email.com') {
+      if (user && user.email === 'areklondon1@gmail.com') {
         return <Redirect to="/" />
       }
     }

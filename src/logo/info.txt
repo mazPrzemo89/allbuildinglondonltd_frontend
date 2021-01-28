@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Arvo-Bold
+font link: https://fonts.google.com/specimen/Arvo
+font author: Anton Koovit
+font author site: http://files.korkork.com/
+Slogan Font: Fanwood Text.otf
+
+icon designer: iconsmind.com
+icon designer link: /imicons
+        
+{"bg":"transparent","icon-gradient-0":"#041804","font":"#000000","slogan":"#141414"}
+      
