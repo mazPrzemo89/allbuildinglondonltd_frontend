@@ -89,10 +89,10 @@ const Email = () => {
   const infoJSX = () => {
     return (
       <div className={styles.contactDiv}>
-        <div className={styles.emailIcon}></div>
-        <p className={styles.emailValue}> areklondon1@gmail.com</p>
         <div className={styles.phoneIcon}></div>
         <p className={styles.phoneValue}> 07412524967</p>
+        <div className={styles.emailIcon}></div>
+        <p className={styles.emailValue}> areklondon1@gmail.com</p>
         <div className={styles.addresIcon}></div>
         <p className={styles.adressValue}> 4 Haling Road, CR2 6HS</p>
       </div>
@@ -123,7 +123,7 @@ const Email = () => {
       {titleMessageJSX()}
       {/* <div className={css.borderTop}></div> */}
       {infoJSX()}
-      {mapJSX()}
+      {/* {mapJSX()} */}
 
       {sent && <Redirect to="/confirmationemail" />}
     </Layout>
