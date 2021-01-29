@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState } from 'react'
 import { Redirect } from 'react-router-dom'
 import { sendEmailAPI } from '../APIs/EmailAPI'
 import classes from '../page.Comments/Comments.module.css'
@@ -19,9 +19,9 @@ const Email = () => {
   const sendMessage = (e) => {
     e.preventDefault()
     if (
-      msgValues.name === '' &&
-      msgValues.phone === '' &&
-      msgValues.email === '' &&
+      msgValues.name === '' ||
+      msgValues.phone === '' ||
+      msgValues.email === '' ||
       msgValues.message === ''
     ) {
       alert('Please fill all fields')
@@ -99,13 +99,17 @@ const Email = () => {
     )
   }
 
-  const titleMessageJSX = () => <h1 className={css.title}>Give us a call</h1>
+  const titleMessageJSX = () => (
+    <h1 className={css.title} style={{ marginTop: '4rem' }}>
+      Give us a call
+    </h1>
+  )
 
   const quoteMessageJSX = () => <h1 className={css.title}>Get a quote now</h1>
 
   const mapJSX = () => {
     return (
-      <div className={classes.mapDiv}>
+      <div className={css.mapDiv}>
         <MapContainer />
       </div>
     )
@@ -113,12 +117,14 @@ const Email = () => {
 
   return (
     <Layout>
-      {titleMessageJSX()}
-      <div className={css.borderTop}></div>
-      {infoJSX()}
-      <div className={css.borderTop}></div>
       {quoteMessageJSX()}
+      {/* <div className={css.borderTop}></div> */}
       {emailFormJSX()}
+      {titleMessageJSX()}
+      {/* <div className={css.borderTop}></div> */}
+      {infoJSX()}
+      {mapJSX()}
+
       {sent && <Redirect to="/confirmationemail" />}
     </Layout>
   )

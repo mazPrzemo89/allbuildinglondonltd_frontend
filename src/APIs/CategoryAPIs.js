@@ -18,7 +18,6 @@ export const createCat = (userId, token, data) => {
 }
 
 export const createNewCat = (userId, token, name) => {
-  console.log(name)
   return fetch(`${API}/category/createnew/${userId}`, {
     method: 'POST',
     headers: {
@@ -37,7 +36,6 @@ export const createNewCat = (userId, token, name) => {
 }
 
 export const deleteCat = (userId, token, id) => {
-  console.log(JSON.stringify(id))
   return fetch(`${API}/category/delete/${userId}`, {
     method: 'DELETE',
     headers: {

@@ -9,7 +9,7 @@ const Scaffolding = () => (
       <div className={classes.scaffoldingContent}>
         <div className={classes.borderTop}></div>
 
-        <p className={classes.scaffTitle}>We can supply a Scaffolding!</p>
+        <p className={classes.scaffTitle}>We can supply Scaffolding!</p>
         <p className={classes.scaffQuote}>
           We have got a very reliable team that works with us for more than 3
           years, they are very flexible and they can install scaffolding to any

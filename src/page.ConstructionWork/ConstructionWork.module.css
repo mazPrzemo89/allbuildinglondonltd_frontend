@@ -12,7 +12,7 @@
 }
 
 .constructionTitle {
-  width: 45%;
+  width: 48%;
   margin-left: 25%;
   margin-top: 3rem;
   font-size: 1.8rem;
@@ -93,7 +93,7 @@
   height: 18rem;
   width: 40rem;
   z-index: 2;
-  background-color: #14232f;
+  background-color: #676767;
   position: absolute;
 }
 
@@ -137,7 +137,7 @@
   height: 13rem;
   width: 40rem;
   z-index: 2;
-  background-color: #14232f;
+  background-color: #676767;
   position: absolute;
 }
 
@@ -253,6 +253,11 @@
 }
 
 @media (max-width: 460px) {
+  .constructionTitle {
+    width: 50%;
+    margin-left: 25%;
+  }
+
   .constructionContent {
     margin-top: 2rem;
   }

@@ -85,7 +85,7 @@ const Comments = () => {
   const commentFormJSX = () => {
     return (
       <div className={classes.commentForm}>
-        <p className={classes.formTitle}>Post a comment</p>
+        <p className={classes.formTitle}>Write a comment</p>
         <form onSubmit={postComment} className={classes.selectDiv}>
           <p className={classes.nameLabel}>Name</p>
           <div className={classes.customerDiv}>
@@ -127,7 +127,6 @@ const Comments = () => {
   }
 
   const commentsJSX = () => {
-    console.log(confirmedComments)
     return (
       <Fragment>
         {confirmedComments.length > 0 &&

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
 import classes from './Gallery.module.css'
 import { photosByCategoryId, deletePhoto } from '../APIs/PhotoApis'
 import { getCatIds } from '../APIs/CategoryAPIs'
@@ -17,7 +16,7 @@ const Gallery = () => {
   const { user, token } = isAuthenticated()
 
   const isAdmin = isAuthenticated() && user.email === 'areklondon1@gmail.com'
-  console.log(useHistory().location.pathname === '/gallery')
+
   const getCategories = () => {
     getCatIds().then((data) => {
       if (data.error) {
@@ -25,22 +24,24 @@ const Gallery = () => {
       } else {
         let ids = []
         data.map((e) => {
-          ids.push({ id: e._id, name: e.name })
+          return ids.push({ id: e._id, name: e.name })
         })
         setCatIds(ids)
-        console.log(ids)
       }
     })
   }
 
   const loadPhotos = (id) => {
+    let photos = []
     setPhotos([])
     photosByCategoryId(id).then((data, err) => {
       if (err) {
         console.log(err)
       }
-      setPhotos(data)
+      photos = data.reverse()
+      setPhotos(photos)
       setLoading(false)
+      photos = []
     })
   }
 
@@ -96,18 +97,11 @@ const Gallery = () => {
   const photosToRenderJSX = () => {
     return (
       <div className={classes.grid}>
-        {console.log(photos)}
         {photos.length > 0 &&
           photos.map((data, i) => {
-            console.log(data)
             return (
               <div className={classes.galleryDiv} key={i}>
-                <img
-                  className={classes.gridImg}
-                  key={i}
-                  alt="photo"
-                  src={data.photo}
-                />
+                <img className={classes.gridImg} key={i} src={data.photo} />
                 <button
                   style={{ display: isAdmin ? '' : 'none' }}
                   value={data._id}

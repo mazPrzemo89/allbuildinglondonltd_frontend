@@ -34,7 +34,11 @@ const Menu = () => {
       </Link>
       {isAuthenticated() &&
         isAuthenticated().user.email === 'areklondon1@gmail.com' && (
-          <Link to="/admin">Admin</Link>
+          <Link className={classes.blueLink} to="/admin">
+            <button className={classes.menuBtn} style={{ color: 'red' }}>
+              Admin
+            </button>
+          </Link>
         )}
       {isAuthenticated() &&
         isAuthenticated().user.email === 'areklondon1@gmail.com' && (

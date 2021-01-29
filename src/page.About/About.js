@@ -5,7 +5,6 @@ import Layout from '../Components/Layout/Layout'
 const About = () => (
   <Layout>
     <div>
-      <div className={classes.borderTop}></div>
       <p className={classes.aboutTitle}>
         Learn more about All Building London Limited!
       </p>
@@ -20,7 +19,7 @@ const About = () => (
         professional, with over 30 years of expertise. We take pride in making
         sure everything is done to the highest standard and there is not a job
         too challenging for our expert consultant, who will provide you with a
-        wide range of all your buildings needs. <br />
+        wide range of all your building needs. <br />
         <br />
         Our team consist of Polish professional, certified builders, who are
         multi skilled and specialist in plumbing and electrical work. They are

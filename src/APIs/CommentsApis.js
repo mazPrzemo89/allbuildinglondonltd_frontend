@@ -1,7 +1,6 @@
 import { API } from '../config'
 
 export const postCommentAPI = (comment) => {
-  console.log(comment)
   return fetch(`${API}/comment/post`, {
     method: 'POST',
     headers: {
@@ -65,7 +64,6 @@ export const confirmCommentAPI = (userId, token, id) => {
 }
 
 export const deleteComAPI = (userId, token, id) => {
-  console.log(JSON.stringify(id))
   return fetch(`${API}/comment/delete/${userId}`, {
     method: 'DELETE',
     headers: {

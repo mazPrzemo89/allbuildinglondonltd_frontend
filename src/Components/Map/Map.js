@@ -7,15 +7,15 @@ if (window.innerWidth <= 415) {
   mapStyles = {
     width: '100%',
     height: '300px',
+    marginBottom: '0 !important;',
   }
 } else {
   mapStyles = {
     width: '80%',
-    height: '500px',
+    height: '30rem',
+    marginBottom: '0 !important;',
   }
 }
-
-console.log(window.innerWidth)
 
 export class MapContainer extends Component {
   state = {
@@ -48,8 +48,8 @@ export class MapContainer extends Component {
           zoom={15}
           style={mapStyles}
           initialCenter={{
-            lat: 51.298048,
-            lng: 22.578868,
+            lat: 51.35847401835117,
+            lng: -0.09567829554754996,
           }}
         >
           <Marker
@@ -72,5 +72,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: '',
+  apiKey: 'AIzaSyDL4b3FXEA6JfGNavuL0Mf8iw6o33O2w10',
 })(MapContainer)

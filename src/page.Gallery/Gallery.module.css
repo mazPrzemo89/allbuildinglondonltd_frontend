@@ -148,3 +148,11 @@
     grid-template-columns: repeat(1, 90%);
   }
 }
+
+@media (max-width: 420px) {
+  .spinDiv {
+    position: absolute;
+    left: 25%;
+    top: 20%;
+  }
+}

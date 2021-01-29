@@ -12,4 +12,26 @@
 }
 
 .mapDiv {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  height: 30rem;
+}
+
+.mapDiv {
+  line-height: 0;
+}
+
+.mapDiv div:nth-child(1n + 0) {
+}
+
+@media (max-width: 415px) {
+  .mapDiv {
+    width: 80%;
+    height: 20rem;
+  }
+}
+
+body {
+  height: 1000px;
 }

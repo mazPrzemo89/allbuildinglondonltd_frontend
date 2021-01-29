@@ -34,7 +34,6 @@ export const photosByCategoryId = (category) => {
 }
 
 export const deletePhoto = (userId, token, id) => {
-  console.log(JSON.stringify(id))
   return fetch(`${API}/photo/delete/${userId}`, {
     method: 'DELETE',
     headers: {

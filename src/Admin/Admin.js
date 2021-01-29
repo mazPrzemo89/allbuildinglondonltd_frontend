@@ -27,7 +27,7 @@ const Dashboard = () => {
       } else {
         let ids = []
         data.map((e) => {
-          ids.push({ id: e._id, name: e.name })
+          return ids.push({ id: e._id, name: e.name })
         })
         setCatIds(ids)
       }
@@ -80,7 +80,6 @@ const Dashboard = () => {
   }
 
   const deleteCategory = () => {
-    console.log(deleteCatId)
     deleteCat(user._id, token, deleteCatId).then((data, err) => {
       if (data) {
         alert(data)

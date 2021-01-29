@@ -1,7 +1,6 @@
 import { API } from '../config'
 
 export const sendEmailAPI = (message) => {
-  console.log(message)
   return fetch(`${API}/email/send`, {
     method: 'POST',
     headers: {

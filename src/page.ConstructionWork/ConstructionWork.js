@@ -10,7 +10,7 @@ const ConstructionWork = () => (
     <div className={classes.constructionContent}>
       <div className={classes.constructionTitleDiv}>
         <div className={classes.constructionTitle}>
-          Construction Work Carried out by <br /> our professionals!
+          Construction Work Carried out by our professionals!
         </div>
       </div>
       <div className={classes.contentTop}>
@@ -29,7 +29,7 @@ const ConstructionWork = () => (
         <p className={classes.quote}>
           We are always aiming for the highest quality, that's why all of our
           jobs are done to the highest standards. The team is led by the very
-          owner of the company which has more than 30 years of experience!
+          owner of the company who has more than 30 years of experience!
         </p>
       </div>
       <div className={classes.loftDiv}>
@@ -41,7 +41,7 @@ const ConstructionWork = () => (
           <p className={classes.loftTitle}>Loft Conversion</p>
           <p className={classes.loftQuote}>
             Here you can see a loft conversion work carried out by our team. We
-            are always focused on the details and meat all the requirements!
+            are always focused on the details and meet all the requirements!
           </p>
         </div>
       </div>

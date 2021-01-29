@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const HeaderSec = () => (
   <div className={classes.headerSec}>
     <Link className={classes.secHeaderLink} to="/getquote">
-      Give us a call and get a free quote!
+      Give us a call or get a free quote now!
     </Link>
   </div>
 )

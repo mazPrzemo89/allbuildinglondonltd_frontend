@@ -1,5 +1,5 @@
 import classes from './Layout.module.css'
-import React, { useEffect } from 'react'
+import React from 'react'
 import AUX from '../../Utils/Aux'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
