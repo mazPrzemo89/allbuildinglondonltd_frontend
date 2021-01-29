@@ -15,7 +15,7 @@ const Gallery = () => {
 
   const { user, token } = isAuthenticated()
 
-  const isAdmin = isAuthenticated() && user.email === 'areklondon1@gmail.com'
+  const isAdmin = isAuthenticated() && user.email === 'email@email.com'
 
   const getCategories = () => {
     getCatIds().then((data) => {
@@ -53,9 +53,9 @@ const Gallery = () => {
     init()
   }, [])
 
-  const clicked = (e) => {
+  const clickedGallery = (e) => {
     if (window.innerWidth < 430) {
-      window.scroll(0, 600)
+      window.scroll(0, 1200)
     }
     loadPhotos(e.target.value)
     setCurrentCategoryId(e.target.value)
@@ -83,7 +83,7 @@ const Gallery = () => {
                 name={btn.name}
                 className={classes.galleryButtons}
                 onClick={(event) => {
-                  clicked(event)
+                  clickedGallery(event)
                 }}
               >
                 {btn.name}
@@ -126,7 +126,7 @@ const Gallery = () => {
   )
 
   const galleryMessageJSX = () => {
-    const noCategory = 'Choose category!'
+    const noCategory = ''
     const yesCategory = 'Take a look at out latest work!'
     return (
       <p className={classes.gallerySecond}>

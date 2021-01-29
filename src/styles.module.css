@@ -22,11 +22,3 @@ body {
     background-size: cover;
   }
 }
-
-body {
-  position: relative;
-  z-index: 5;
-  height: 100%;
-  width: 100vw;
-  margin: 0;
-}

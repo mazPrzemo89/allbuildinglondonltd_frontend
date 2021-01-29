@@ -13,7 +13,7 @@ import Comments from './page.Comments/Comments'
 import Email from './page.Email/Email'
 import EmailConf from './pages.Confirmation/Email'
 import CommentConf from './pages.Confirmation/Comment'
-import classes from './styles.module.css'
+import classes from './styles.module.css' //it will tell you it doesn't need it but its a Lie!
 
 const Routes = () => {
   return (

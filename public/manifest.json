@@ -1,21 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "AllBuildingLondonltd",
+  "name": "Construction company, Croydon, Sutton, Surrey",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "FaviconLogo.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "logoMedium.jpeg",
+      "type": "image/jpeg",
+      "sizes": "400x400"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "400JpgdpiLogo.jpg",
+      "type": "image/jpg",
+      "sizes": "2667x1611"
     }
   ],
   "start_url": ".",

@@ -1,6 +1,11 @@
 .steelWorkDiv {
   position: relative;
   height: 31rem;
+  animation: fadeIn ease 3.5s;
+  -webkit-animation: fadeIn ease 3.5s;
+  -moz-animation: fadeIn ease 3.5s;
+  -o-animation: fadeIn ease 3.5s;
+  -ms-animation: fadeIn ease 3.5s;
 }
 
 .bckgImg {
@@ -13,6 +18,56 @@
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
+  animation: fadeIn ease 3.5s;
+  -webkit-animation: fadeIn ease 3.5s;
+  -moz-animation: fadeIn ease 3.5s;
+  -o-animation: fadeIn ease 3.5s;
+  -ms-animation: fadeIn ease 3.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .steelTitle {
@@ -21,7 +76,7 @@
   font-weight: bold;
   font-size: 2rem;
   left: 20rem;
-  top: 9rem;
+  top: 8rem;
   color: white;
   z-index: 2;
 }
@@ -71,7 +126,7 @@
   position: absolute;
   text-align: center;
   left: 11.6rem;
-  top: 1.5rem;
+  top: 5rem;
   width: 10rem;
   font-size: 1.5rem;
   text-align: center;
@@ -86,7 +141,7 @@
   font-size: 1.1rem;
   position: absolute;
   left: 8rem;
-  top: 5rem;
+  top: 9rem;
   font-family: 'Ubuntu', sans-serif;
   color: #3a3c47;
 }
@@ -104,6 +159,11 @@
   }
 }
 
+@media (max-width: 500px) {
+  .quoteTitle {
+    margin-top: 0;
+  }
+}
 @media (max-width: 870px) {
   .steelWorkDiv {
     margin-top: 2rem;
@@ -127,11 +187,13 @@
   }
 
   .quoteTitle {
+    top: -1rem;
     width: 80%;
     left: 10%;
   }
 
   .quoteContent {
+    top: 4rem;
     width: 70%;
     left: 15%;
   }

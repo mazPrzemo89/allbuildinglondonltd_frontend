@@ -2,14 +2,14 @@ import React from 'react'
 import Layout from '../Components/Layout/Layout'
 import SecHeader from './HeaderSecondary'
 import MainPicture from './MainPicture'
-import UpperContent from './UpperContent'
+import HomeContent from './HomeContent'
 import css from './Home.module.css'
 
 const Home = () => (
   <Layout>
     <SecHeader></SecHeader>
     <MainPicture></MainPicture>
-    <UpperContent></UpperContent>
+    <HomeContent></HomeContent>
     <p className={css.subquote}>
       All Building London ltd is working closley with Polish Roots Limited
       Company.

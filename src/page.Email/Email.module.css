@@ -4,13 +4,6 @@
   font-weight: 700;
 }
 
-.borderTop {
-  width: 60%;
-  margin-left: 20%;
-  height: 1px;
-  background-color: black;
-}
-
 .mapDiv {
   margin-top: 2rem;
   margin-bottom: 2rem;

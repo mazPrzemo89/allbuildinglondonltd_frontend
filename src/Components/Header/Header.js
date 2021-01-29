@@ -13,26 +13,34 @@ const Header = () => {
     setShow(!show)
   }
 
+  const logo = () => (
+    <div
+      onClick={() => {
+        history.push('/')
+      }}
+      className={classes.logoWrapper}
+    >
+      <div className={classes.logoDiv}></div>
+    </div>
+  )
+
+  const menu = () => (
+    <div onClick={toggleShow} className={classes.menu}>
+      <Hamburger />
+      <div className={classes.menuTitleDiv}>
+        <p>M&nbsp; e&nbsp; n&nbsp; u</p>
+      </div>
+      <Backdrop show={show} clicked={toggleShow} />
+      <SideDrawer open={show} closed={toggleShow}>
+        <Menu />
+      </SideDrawer>
+    </div>
+  )
+
   return (
     <div className={classes.header}>
-      <div
-        onClick={() => {
-          history.push('/')
-        }}
-        className={classes.logoWrapper}
-      >
-        <div className={classes.logoDiv}></div>
-      </div>
-      <div onClick={toggleShow} className={classes.menu}>
-        <Hamburger />
-        <div className={classes.menuTitleDiv}>
-          <p>M&nbsp; e&nbsp; n&nbsp; u</p>
-        </div>
-        <Backdrop show={show} clicked={toggleShow} />
-        <SideDrawer open={show} closed={toggleShow}>
-          <Menu />
-        </SideDrawer>
-      </div>
+      {logo()}
+      {menu()}
     </div>
   )
 }

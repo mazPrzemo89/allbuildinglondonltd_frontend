@@ -9,11 +9,12 @@
   font-size: 1.1rem;
   font-family: 'Ubuntu', sans-serif;
   padding-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .borderBottom {
-  margin-left: 15%;
-  width: 70%;
+  margin-left: 20%;
+  width: 60%;
   height: 1px;
   background-color: black;
 }

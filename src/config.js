@@ -1,3 +1,3 @@
 export const API = process.env.REACT_APP_API_URL
 
-export const MAP = process.env.REACT_APP_GOOGLE_KEY
+export const MAP_API_KEY = process.env.REACT_APP_MAP_API_KEY

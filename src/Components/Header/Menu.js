@@ -33,7 +33,7 @@ const Menu = () => {
         <button className={classes.menuBtn}>Contact Us</button>
       </Link>
       {isAuthenticated() &&
-        isAuthenticated().user.email === 'areklondon1@gmail.com' && (
+        isAuthenticated().user.email === 'email@email.com' && (
           <Link className={classes.blueLink} to="/admin">
             <button className={classes.menuBtn} style={{ color: 'red' }}>
               Admin
@@ -41,7 +41,7 @@ const Menu = () => {
           </Link>
         )}
       {isAuthenticated() &&
-        isAuthenticated().user.email === 'areklondon1@gmail.com' && (
+        isAuthenticated().user.email === 'email@email.com' && (
           <button
             className={classes.logout}
             onClick={() => signout(() => window.location.reload())}

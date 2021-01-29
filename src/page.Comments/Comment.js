@@ -39,50 +39,48 @@ const Comment = ({ comment }) => {
     })
   }
 
-  return (
-    <Fragment>
-      <div className={classes.comment}>
-        <p className={classes.content}>{comment.content}</p>
-        <div className={classes.starDiv}>
-          <StarRatings
-            rating={comment.rating}
-            starDimension="1.7rem"
-            starRatedColor="orange"
-            numberOfStars={comment.rating}
-            name="rating"
-          />
-        </div>
-        <button
-          style={{
-            display:
-              isAuthenticated() && user.email === 'areklondon1@gmail.com'
-                ? ''
-                : 'none',
-          }}
-          className={classes.deleteBtn}
-          value={comment._id}
-          onClick={(e) => deleteComment(e)}
-        >
-          delete
-        </button>
-        <button
-          style={{
-            display:
-              isAuthenticated() &&
-              user.email === 'areklondon1@gmail.com' &&
-              comment.confirmed === false
-                ? ''
-                : 'none',
-          }}
-          className={classes.confirmBtn}
-          onClick={() => confirmComment(comment._id)}
-        >
-          confirm
-        </button>
-        <p className={classes.name}>-{comment.name}</p>
+  const commentForm = () => (
+    <div className={classes.comment}>
+      <p className={classes.content}>{comment.content}</p>
+      <div className={classes.starDiv}>
+        <StarRatings
+          rating={comment.rating}
+          starDimension="1.7rem"
+          starRatedColor="orange"
+          numberOfStars={comment.rating}
+          name="rating"
+        />
       </div>
-    </Fragment>
+      <button
+        style={{
+          display:
+            isAuthenticated() && user.email === 'email@email.com' ? '' : 'none',
+        }}
+        className={classes.deleteBtn}
+        value={comment._id}
+        onClick={(e) => deleteComment(e)}
+      >
+        delete
+      </button>
+      <button
+        style={{
+          display:
+            isAuthenticated() &&
+            user.email === 'email@email.com' &&
+            comment.confirmed === false
+              ? ''
+              : 'none',
+        }}
+        className={classes.confirmBtn}
+        onClick={() => confirmComment(comment._id)}
+      >
+        confirm
+      </button>
+      <p className={classes.name}>-{comment.name}</p>
+    </div>
   )
+
+  return <Fragment>{commentForm()}</Fragment>
 }
 
 export default Comment

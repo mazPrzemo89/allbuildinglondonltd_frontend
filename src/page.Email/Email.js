@@ -44,7 +44,6 @@ const Email = () => {
   const emailFormJSX = () => {
     return (
       <div className={classes.commentForm}>
-        {/* <p className={classes.formTitle}>Get quote!</p> */}
         <form onSubmit={sendMessage} className={classes.selectDiv}>
           <p className={classes.nameLabel}>Name</p>
           <div className={classes.customerDiv}>
@@ -92,7 +91,7 @@ const Email = () => {
         <div className={styles.phoneIcon}></div>
         <p className={styles.phoneValue}> 07412524967</p>
         <div className={styles.emailIcon}></div>
-        <p className={styles.emailValue}> areklondon1@gmail.com</p>
+        <p className={styles.emailValue}> email@email.com</p>
         <div className={styles.addresIcon}></div>
         <p className={styles.adressValue}> 4 Haling Road, CR2 6HS</p>
       </div>
@@ -118,10 +117,10 @@ const Email = () => {
   return (
     <Layout>
       {quoteMessageJSX()}
-      {/* <div className={css.borderTop}></div> */}
+
       {emailFormJSX()}
       {titleMessageJSX()}
-      {/* <div className={css.borderTop}></div> */}
+
       {infoJSX()}
       {/* {mapJSX()} */}
 

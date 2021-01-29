@@ -71,10 +71,9 @@ const Dashboard = () => {
     postPhoto(user._id, token, formDataPhoto).then((data, err) => {
       if (data) {
         alert('Photo uploaded')
-        window.location.reload()
         return
       } else {
-        return alert(err.error)
+        return alert('Something went wrong.')
       }
     })
   }
@@ -178,8 +177,8 @@ const Dashboard = () => {
   return (
     <Layout>
       {categoryForm()}
-      {deleteCategoryForm()}
       {photoForm()}
+      {deleteCategoryForm()}
     </Layout>
   )
 }

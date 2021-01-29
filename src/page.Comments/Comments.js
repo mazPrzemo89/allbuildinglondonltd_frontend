@@ -45,7 +45,7 @@ const Comments = () => {
         console.log(err)
       }
     })
-    if (isAuthenticated() && user.email === 'areklondon1@gmail.com') {
+    if (isAuthenticated() && user.email === 'email@email.com') {
       fetchUnconfirmedComments(user._id, token).then((data, err) => {
         if (data) {
           unfilteredComments = data.reverse()
@@ -64,6 +64,9 @@ const Comments = () => {
 
   const postComment = (e) => {
     e.preventDefault()
+    if (commentValues.name === '' || commentValues.content === '') {
+      return alert('Please fill all fields')
+    }
     postCommentAPI(commentValues).then((data, err) => {
       if (data) {
         setPosted(true)

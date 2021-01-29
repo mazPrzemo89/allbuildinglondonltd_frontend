@@ -6,7 +6,7 @@ const ConstructionWork = () => (
   <Layout>
     <div className={classes.borderTop}></div>
     <div className={classes.steelWorkDiv}>
-      <p className={classes.steelTitle}>Steel Work</p>
+      <p className={classes.steelTitle}>Steelwork</p>
       <div className={classes.bckgImg}></div>
       <div className={classes.modal}></div>
     </div>

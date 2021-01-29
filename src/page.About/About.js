@@ -33,11 +33,11 @@ const About = () => (
       <p className={classes.aboutTitle}>Any Questions?</p> <br />
       <div className={classes.contactDiv}>
         <div className={classes.emailIcon}></div>
-        <p className={classes.emailValue}> areklondon1@gmail.com</p>
+        <p className={classes.emailValue}> email@email.com</p>
         <div className={classes.phoneIcon}></div>
-        <p className={classes.phoneValue}> 07412524967</p>
+        <p className={classes.phoneValue}> 0000000000</p>
         <div className={classes.addresIcon}></div>
-        <p className={classes.adressValue}> 4 Haling Road, CR2 6HS</p>
+        <p className={classes.adressValue}> Address</p>
       </div>
     </div>
   </Layout>
