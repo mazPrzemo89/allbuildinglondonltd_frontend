@@ -44,7 +44,6 @@
 
 .btn:hover {
   cursor: pointer;
-  background-color: #319aa8;
 }
 
 /* desktop styling */
@@ -63,10 +62,6 @@
   .imageDescription {
     font-size: 1rem;
     height: 2.3rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(58, 60, 71);
     margin-bottom: 20px;
   }
 
@@ -78,16 +73,9 @@
 
   .btn {
     font-size: 0.9rem;
-    background-color: #028ea0;
-    color: white;
-    border-radius: 4px;
-    margin-top: 2rem;
     margin-left: 20%;
     width: 60%;
     height: 2.3rem;
-    border: none;
-    outline: none;
-    margin-bottom: 2rem;
   }
 }
 

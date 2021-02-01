@@ -54,9 +54,7 @@
 
 .logoLink {
   font-size: 1.3rem;
-  font-family: 'Ubuntu', sans-serif, bold;
   font-weight: bold;
-  color: #028ea0;
 }
 
 .menuLinks {
@@ -109,7 +107,6 @@
   font-size: 1.1rem;
   height: 4rem;
   padding-top: 20px;
-
   cursor: pointer;
 }
 
@@ -249,7 +246,6 @@
   }
 
   .logoWrapper {
-    height: 10rem;
     width: 34rem;
     margin-left: auto;
     margin-right: auto;

@@ -7,7 +7,6 @@
 
 .scaffTitle {
   position: absolute;
-
   left: 4rem;
   top: 1.5rem;
   width: 30rem;
@@ -32,7 +31,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   background-image: url('../images/scaff.png');
   border-radius: 2px;
   top: 3rem;
@@ -148,14 +146,12 @@
   }
   .scaffTitle {
     width: 100%;
-    text-align: center;
     left: 0%;
     font-size: 1.8rem;
   }
 
   .scaffQuote {
     width: 90%;
-    text-align: center;
     left: 5%;
   }
   .scaffImage {

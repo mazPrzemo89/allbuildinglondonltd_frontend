@@ -16,11 +16,3 @@
   height: 2px;
   background-color: white;
 }
-
-@media (min-width: 500px) {
-  /* .DrawerToggle div {
-        width: 90%;
-        height: 2px;
-        background-color: black;
-    } */
-}

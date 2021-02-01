@@ -11,14 +11,6 @@
   transition: transform 1s ease-out;
   cursor: pointer;
 }
-/* background-color: rgb(173, 173, 173); */
-@media (min-width: 770px) {
-  /* .SideDrawer {
-    width: 100%;
-    border: 1px solid grey;
-    border-top: none;
-  } */
-}
 
 @media (max-width: 414px) {
   .SideDrawer {
@@ -37,8 +29,3 @@
   z-index: 1;
   transform: translateY(0);
 }
-
-/* .Logo {
-    height: 11%;
-    margin-bottom: 32px;
-} */
