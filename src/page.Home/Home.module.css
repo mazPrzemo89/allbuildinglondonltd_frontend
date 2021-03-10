@@ -17,3 +17,58 @@
   display: flex;
   justify-content: center;
 }
+
+.quoteLink {
+  color: white;
+}
+
+.videoDiv {
+  position: relative;
+  height: 27rem;
+  width: 100%;
+}
+
+.videoQuote {
+  position: absolute;
+  left: 5%;
+  width: 45%;
+  height: 25rem;
+  padding: 2rem;
+  padding-top: 10%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #028ea0;
+}
+.videoDimmensions {
+  position: absolute;
+  right: 5%;
+  width: 45%;
+  height: 25rem;
+}
+
+@media (max-width: 769px) {
+  .videoDiv {
+    height: 52rem;
+  }
+
+  .videoQuote {
+    width: 100%;
+    left: 0;
+    padding-top: 20%;
+  }
+
+  .videoDimmensions {
+    width: 100%;
+    top: 47%;
+    right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .videoQuote {
+    padding-top: 10%;
+  }
+}
