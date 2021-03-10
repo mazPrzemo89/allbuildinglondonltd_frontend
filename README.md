@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# allbuildinglondonltd_fronteend
+This is a website project for AllBuildingLondonltd construction company. It gives the administrator of the page the freedom to create photo gallery categories and then associate pictures with them. An email API is integrated in the app for quoting pourposes. Users are free to rate the services by posting a comment and a star rating which is to be verified by the admin later. The whole application is hosted on a virtual private server. The frontend is written in ReactJS, it utilizes custom npm packages. CSS is used for styling of the application's layout and components. Backend is written in latest stable version of NodeJS, an Express sever connected to a MongoDB database via mongoose library, serves a React production build. Frontend and backend communtcate via REST API's.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Components
 
-## Available Scripts
+## Admin
 
-In the project directory, you can run:
+Admin Component is visible and available only to a logged in admin user. The admin user is determined a specific email adress and a JWT token signed by the server. The token is stored in the browsers local storage. In the admin page user can create category and upload photos to it. Deleting category will result in deleting all the pictures associated with it.
 
-### `npm start`
+## Gallery
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Gallery Component displays the uploaded photos by selected category. Deleting photos happes directly in the gallery component. For an authenticated admin user a delete button will be displayed under each photo. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Home
 
-### `npm test`
+Home page is a small display of the company's work it can take the end user directly to construction, steelwork, scaffoldong pages and the comment section.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Construction, Steelwork and Scaffoldong
 
-### `npm run build`
+Construction, Steelwork and Scaffoldong pages are all stateless Components. They are a short introduction to what the company does and what their goals and achievements are. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Comments
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In Comments page any end user can add a comment about the company. Every posted comment must be verified by the admin before being displayes to the end users.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## About 
 
-### `npm run eject`
+About page is also a stateless Component, it contains information about the companys history, their standards and policies.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contact
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contact page lets end users send a free quote to the companys email adress. A form is sent from the backend witch is integrated with an email sending API. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Deployment
 
-## Learn More
+For production run ``` npm run build ``` command form the projects main directory. After the build is completed. Move it to your production's express server root directory, you'll find instructions on how to deploy a production server for this app in allbuildinglondonltd_backend repo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
